@@ -3,3 +3,9 @@
 
 dependencies:
   - role: mylab_node
+    vars:
+      mylab_node_packages:
+      - "{{ mylab_node_default_packages }}"
+      - https://dl.fedoraproject.org/pub/epel/epel-release-latest-8.noarch.rpm
+      - ansible
+      - git
